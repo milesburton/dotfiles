@@ -9,9 +9,7 @@ echo "...done installing via apt"
 
 echo "dotfile installing starship..."
 
-curl -sS https://starship.rs/install.sh > starshipinstall.sh
-echo "...downloaded starship ok"
-yes | sh starshipinstall.sh
+curl -sS https://starship.rs/install.sh | sh -s -- -y
 
 echo "...done installing starship"
 
