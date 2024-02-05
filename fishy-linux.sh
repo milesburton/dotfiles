@@ -3,10 +3,10 @@
 sudo apt-get update
 yes | sudo apt-get install tmux fish
 
-curl -sS https://starship.rs/install.sh | sh
+yes | curl -sS https://starship.rs/install.sh | sh
 
-cp ~/dotfiles/.tmux.conf .
-cp -R ~/dotfiles/.config .
+cp ./.tmux.conf ~
+cp -R ./.config ~
 
 chsh /usr/bin/fish
 
