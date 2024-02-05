@@ -1,5 +1,7 @@
+#! /usr/bin/sh
+
 sudo apt-get update
-sudo apt-get install tmux 
+yes | sudo apt-get install tmux fish
 
 curl -sS https://starship.rs/install.sh | sh
 
