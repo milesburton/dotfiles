@@ -1,0 +1,4 @@
+[shell]
+fish_indicator = '[><º>](yellow)'
+bash_indicator = '👊'
+disabled = false
