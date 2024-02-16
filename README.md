@@ -1,0 +1,7 @@
+```json
+{
+    "dotfiles.repository": "https://github.com/jimhigson/dotfiles.git",
+    "dotfiles.targetPath": "~/dotfiles",
+    "dotfiles.installCommand": "fishy-linux.sh",
+}
+```
