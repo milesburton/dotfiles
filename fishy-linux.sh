@@ -27,3 +27,6 @@ echo "$HEADER changing shell..."
 chsh /usr/bin/fish
 echo "$HEADER...done changing shell"
 
+if [ -x "$(command -v pnpm)" ]; then
+  pnpm install-completion fish
+fi
