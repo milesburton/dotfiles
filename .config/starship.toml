@@ -2,3 +2,8 @@
 fish_indicator = '[><º>](yellow)'
 bash_indicator = '👊'
 disabled = false
+
+[time]
+disabled = false
+style = "fg:white bg:#666666"
+format = '[$time]($style) '
