@@ -1,8 +1,8 @@
-function starship_transient_rprompt_func
-  starship module time
-end
+#function starship_transient_rprompt_func
+#  starship module time
+#end
 function starship_transient_prompt_func
-  starship module character
+  echo (starship module time)(starship module character)
 end
 
 
