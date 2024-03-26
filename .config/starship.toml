@@ -1,9 +1,10 @@
-format = """                                                                                                                          
-$username\                                                                                                                            
-$hostname\                                                                                                                            
-$localip\                                                                                                                             
-$shlvl\                                                                                                                               
-$singularity\                                                                                                                         
+
+format = """
+$username\
+$hostname\
+$localip\
+$shlvl\
+$singularity\
 $kubernetes\
 $directory\
 $vcsh\
@@ -94,8 +95,8 @@ disabled = false
 
 [time]
 disabled = false
-style = "fg:white bg:#666666"
-format = '[$time]($style) '
+style = "fg:#222222 bg:#eeee66"
+format = '[ $time ]($style) '
 
 [container]
 symbol = '🐳'
