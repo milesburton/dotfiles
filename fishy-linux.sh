@@ -27,6 +27,19 @@ echo "$HEADER changing shell..."
 chsh /usr/bin/fish
 echo "$HEADER...done changing shell"
 
+# Check if pnpm is installed
 if [ -x "$(command -v pnpm)" ]; then
+  # Check if package.json exists, if not, create it
+  if [ ! -f "package.json" ]; then
+    echo "$HEADER package.json not found, creating it..."
+    echo '{}' > package.json
+    echo "$HEADER...done creating package.json"
+  fi
+
+  # Install fish completion using pnpm
+  echo "$HEADER installing fish completion..."
   pnpm install-completion fish
+  echo "$HEADER...done installing fish completion"
+else
+  echo "$HEADER pnpm is not installed, skipping completion installation"
 fi
