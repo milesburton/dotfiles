@@ -17,4 +17,12 @@ enable_transience
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
 
-cd /workspace/ui
+if [ -d "/workspace/ui" ]; then
+  cd /workspace/ui
+  echo "Entered /workspace/ui"
+elif [ -d "/workspace/playground" ]; then
+  cd /workspace/playground
+  echo "Entered /workspace/playground"
+else
+  echo "Neither 'ui' nor 'playground' directory exists in /workspace."
+fi
