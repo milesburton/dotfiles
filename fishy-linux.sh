@@ -38,7 +38,7 @@ if [ -x "$(command -v pnpm)" ]; then
 
   # Install fish completion using pnpm
   echo "$HEADER installing fish completion..."
-  pnpm install-completion fish
+  # pnpm install-completion fish 
   echo "$HEADER...done installing fish completion"
 else
   echo "$HEADER pnpm is not installed, skipping completion installation"
