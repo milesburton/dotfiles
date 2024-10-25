@@ -27,5 +27,5 @@ cp -R "$SCRIPT_DIR/.config" ~
 echo "$HEADER...done copying config"
 
 echo "$HEADER changing shell..."
-chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/fish
 echo "$HEADER...done changing shell"
