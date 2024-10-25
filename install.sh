@@ -4,6 +4,7 @@ RED='\033[0;31m'
 NC='\033[0m' # No Color
 HEADER="$RED[fishylinux]$NC"
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"  # Get the directory of the script itself
+USER="$(whoami)"
 
 echo "$HEADER executing script from $SCRIPT_DIR"
 echo "$HEADER installing via apt"
@@ -27,5 +28,5 @@ cp -R "$SCRIPT_DIR/.config" ~
 echo "$HEADER...done copying config"
 
 echo "$HEADER changing shell..."
-sudo chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/fish $USER
 echo "$HEADER...done changing shell"
